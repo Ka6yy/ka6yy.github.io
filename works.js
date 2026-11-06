@@ -364,8 +364,8 @@ window.WORKS = [
       en: 'The LexFiles website: a home page with a live product window, Features and Security pages, pricing and a trial request.',
     },
     contrib: {
-      ru: 'работа поверх макета главной v2, октябрь 2026',
-      en: 'built on top of the v2 home mockup, October 2026',
+      ru: 'в команде с коллегой по работе',
+      en: 'in a team with a colleague',
     },
     mine: {
       ru: [
