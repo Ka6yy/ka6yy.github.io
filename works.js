@@ -63,13 +63,6 @@ window.PROFILE = {
     { icon: 'telegram', label: 'Telegram', value: '@nynelocalhost', url: 'https://t.me/nynelocalhost' },
     { icon: 'github', label: 'GitHub', value: 'ka6yy', url: 'https://github.com/ka6yy' },
   ],
-  // Цифры на 03.11.2026 — по всем репозиториям (GitHub search), строки — приблизительно.
-  stats: [
-    { value: '305', label: { ru: 'pull request’ов', en: 'pull requests' } },
-    { value: '274', label: { ru: 'смёржено', en: 'merged' } },
-    { value: '443', label: { ru: 'коммита', en: 'commits' } },
-    { value: '~200k', label: { ru: 'строк кода', en: 'lines shipped' } },
-  ],
   toolbox: [
     { icon: 'db', title: 'Backend', items: ['Python', 'FastAPI', 'Flask', 'Django', 'SQLAlchemy', 'PostgreSQL', 'MySQL', 'MSSQL', 'Node.js', 'Express'] },
     { icon: 'braces', title: 'Frontend', items: ['TypeScript', 'JavaScript', 'React', 'Next.js', 'Vite', 'HTML5', 'CSS3', 'Tailwind'] },
@@ -118,10 +111,6 @@ window.WORKS = [
       ru: 'Рабочая среда для юристов и арбитражных управляющих: дела о банкротстве, документы, сроки, почта и ИИ-ассистент LexUp в одном месте. Python / LLM-бэкенд, фронтенд на Next.js.',
       en: 'A workspace for lawyers and insolvency practitioners: bankruptcy cases, documents, deadlines, mail and the LexUp AI assistant in one place. Python / LLM backend, Next.js frontend.',
     },
-    contrib: {
-      ru: '241 смёрженный PR и 402 коммита в монорепозиторий продукта · май — сентябрь 2026',
-      en: '241 merged PRs and 402 commits to the product monorepo · May — September 2026',
-    },
     mine: {
       ru: [
         'Модуль банкротства: экраны дела и «Карта дела» — граф процедуры по стадиям (суд, кредиторы, споры, собрания, торги, публикации, закрытие) с редактором этапов drag & drop.',
@@ -157,10 +146,6 @@ window.WORKS = [
     summary: {
       ru: 'Мобильное приложение LexFiles для Android (RuStore): дела о банкротстве, документы, задачи и чат с LexUp. Сначала прототип на Capacitor, затем нативный клиент на Flutter.',
       en: 'The LexFiles Android app (RuStore): bankruptcy cases, documents, tasks and LexUp chat. A Capacitor prototype first, then a native Flutter client.',
-    },
-    contrib: {
-      ru: '35 из 40 коммитов в репозитории приложения, релизы v1.0 → v1.1',
-      en: '35 of 40 commits in the app repository, releases v1.0 → v1.1',
     },
     mine: {
       ru: [
@@ -229,10 +214,6 @@ window.WORKS = [
     summary: {
       ru: 'Десктоп-приложение LexFiles на Electron: та же рабочая среда плюс то, что не может сервер, — запросы в госсистемы с IP пользователя, подпись УКЭП и подача документов.',
       en: 'The LexFiles desktop app on Electron: the same workspace plus what a server can’t do — government-system requests from the user’s IP, qualified e-signatures and filing.',
-    },
-    contrib: {
-      ru: '61 из 134 коммитов, 11 смёрженных PR',
-      en: '61 of 134 commits, 11 merged PRs',
     },
     mine: {
       ru: [
