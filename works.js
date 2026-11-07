@@ -17,7 +17,7 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
-window.ASSET_VERSION = '2026-11-06c';
+window.ASSET_VERSION = '2026-11-07a';
 
 window.PROFILE = {
   name: 'ka6yy',
@@ -267,67 +267,6 @@ window.WORKS = [
     links: [],
   },
   {
-    slug: 'crm',
-    title: 'CRM',
-    year: 2026,
-    kind: 'own',
-    tags: ['web'],
-    icon: 'kanban',
-    cover: 'assets/works/crm/board.webp',
-    shots: ['assets/works/crm/timeline.webp'],
-    summary: {
-      ru: 'CRM для команды разработки: таймлайн задач на две недели и канбан, сотрудники, контакты и аналитика нагрузки.',
-      en: 'A CRM for a dev team: a two-week task timeline and kanban, people, contacts and workload analytics.',
-    },
-    points: {
-      ru: [
-        'Продукт целиком: сервер, вход и роли, API и деплой.',
-        'Дизайн-система «Студия»: живой фон, стеклянное превью задач, палитры тем и выбор шрифта.',
-        'Таймлайн на две недели и канбан: массовый выбор задач и перенос по статусам.',
-        'Описание и заметки в Markdown с предпросмотром (таблицы, цитаты), вставка фото и файлов из буфера обмена.',
-        'Нагрузка по сотрудникам, контакты и аналитика. На скриншотах — демо-данные.',
-      ],
-      en: [
-        'The whole product: the server, sign-in and roles, the API and deployment.',
-        'The “Studio” design system: a live background, glassy task preview, theme palettes and a font picker.',
-        'A two-week timeline and kanban: bulk task selection and moving across statuses.',
-        'Markdown descriptions and notes with preview (tables, quotes), pasting photos and files from the clipboard.',
-        'Per-person workload, contacts and analytics. Screenshots show demo data.',
-      ],
-    },
-    stack: ['JavaScript', 'HTML', 'CSS', 'Node.js'],
-    links: [],
-  },
-  {
-    slug: 'pentesthub',
-    title: 'PentestHub',
-    year: 2026,
-    kind: 'own',
-    tags: ['security'],
-    icon: 'bug',
-    cover: 'assets/works/pentesthub/cover.webp',
-    summary: {
-      ru: 'Локальный веб-сервис с 51 инструментом для авторизованного пентеста и разведки. Бэкенд на FastAPI, инструменты — на чистом Python, без внешних бинарников.',
-      en: 'A local web service with 51 tools for authorized pentesting and recon. FastAPI backend, tools in pure Python with no external binaries.',
-    },
-    points: {
-      ru: [
-        '«Полный анализ»: одна цель — все подходящие проверки параллельно и единый отчёт.',
-        'Recon / OSINT, сеть, веб, крипто, CVE, генераторы пейлоадов, мини-Repeater.',
-        'Терминал в дашборде — по умолчанию в изолированном Kali в Docker.',
-        'Гейт авторизации для активных проверок, rate limit, логирование согласий.',
-      ],
-      en: [
-        '“Full analysis”: one target — every relevant check in parallel and a single report.',
-        'Recon / OSINT, network, web, crypto, CVE lookup, payload builders, a mini Repeater.',
-        'An in-dashboard terminal running in an isolated Kali container by default.',
-        'An authorization gate for active checks, rate limits, consent logging.',
-      ],
-    },
-    stack: ['Python', 'FastAPI', 'SQLite', 'Docker', 'Kali Linux'],
-    links: [],
-  },
-  {
     slug: 'lexfiles-landing',
     title: { ru: 'Лендинг LexFiles', en: 'LexFiles landing' },
     year: 2026,
@@ -364,6 +303,35 @@ window.WORKS = [
     links: [],
   },
   {
+    slug: 'pentesthub',
+    title: 'PentestHub',
+    year: 2026,
+    kind: 'own',
+    tags: ['security'],
+    icon: 'bug',
+    cover: 'assets/works/pentesthub/cover.webp',
+    summary: {
+      ru: 'Локальный веб-сервис с 51 инструментом для авторизованного пентеста и разведки. Бэкенд на FastAPI, инструменты — на чистом Python, без внешних бинарников.',
+      en: 'A local web service with 51 tools for authorized pentesting and recon. FastAPI backend, tools in pure Python with no external binaries.',
+    },
+    points: {
+      ru: [
+        '«Полный анализ»: одна цель — все подходящие проверки параллельно и единый отчёт.',
+        'Recon / OSINT, сеть, веб, крипто, CVE, генераторы пейлоадов, мини-Repeater.',
+        'Терминал в дашборде — по умолчанию в изолированном Kali в Docker.',
+        'Гейт авторизации для активных проверок, rate limit, логирование согласий.',
+      ],
+      en: [
+        '“Full analysis”: one target — every relevant check in parallel and a single report.',
+        'Recon / OSINT, network, web, crypto, CVE lookup, payload builders, a mini Repeater.',
+        'An in-dashboard terminal running in an isolated Kali container by default.',
+        'An authorization gate for active checks, rate limits, consent logging.',
+      ],
+    },
+    stack: ['Python', 'FastAPI', 'SQLite', 'Docker', 'Kali Linux'],
+    links: [],
+  },
+  {
     slug: 'osint-terminal',
     title: 'osint-terminal',
     year: 2026,
@@ -375,7 +343,55 @@ window.WORKS = [
       ru: 'Браузерная OSINT-платформа: разведка (дорки и поиск по утечкам), сеть / WHOIS / DNS, экспорт отчёта. Встроенный Sherlock и LLM-анализ через OpenRouter.',
       en: 'A browser OSINT platform: recon (dorks + breach lookup), network / WHOIS / DNS, report export. Built-in Sherlock and LLM analysis via OpenRouter.',
     },
+    points: {
+      ru: [
+        'Поиск по нику, email, телефону, имени и утечкам: под каждый тип сразу собираются запросы к 6–8 сервисам — поисковые дорки, HIBP, Sherlock, WhatsMyName, IntelX, Holehe.',
+        'Терминал в стиле zsh: проверка ника на 30 платформах командой, история команд.',
+        'Сеть: IP и домены — страна, провайдер, ASN, геолокация; ping-монитор с живым графиком и быстрые переходы в Shodan, Censys, VirusTotal, AbuseIPDB, WHOIS.',
+        'Пароли и хэши: оценка стойкости с энтропией и временем подбора, генератор, SHA-хэши через Web Crypto API.',
+        'Отчёты: пять шаблонов, экспорт в HTML и TXT. Данные остаются в браузере и никуда не отправляются.',
+      ],
+      en: [
+        'Search by username, email, phone, name and breaches: each type builds queries for 6–8 services at once — search dorks, HIBP, Sherlock, WhatsMyName, IntelX, Holehe.',
+        'A zsh-style terminal: check a username across 30 platforms with one command, with command history.',
+        'Network: IPs and domains — country, ISP, ASN, geolocation; a ping monitor with a live chart and quick jumps to Shodan, Censys, VirusTotal, AbuseIPDB, WHOIS.',
+        'Passwords and hashes: strength scoring with entropy and crack time, a generator, SHA hashes via the Web Crypto API.',
+        'Reports: five templates, HTML and TXT export. Data stays in the browser and is never sent anywhere.',
+      ],
+    },
     stack: ['Python', 'OpenRouter', 'Sherlock', 'OTX', 'Wayback'],
+    links: [],
+  },
+  {
+    slug: 'crm',
+    title: 'CRM',
+    year: 2026,
+    kind: 'own',
+    tags: ['web'],
+    icon: 'kanban',
+    cover: 'assets/works/crm/board.webp',
+    shots: ['assets/works/crm/timeline.webp'],
+    summary: {
+      ru: 'CRM для команды разработки: таймлайн задач на две недели и канбан, сотрудники, контакты и аналитика нагрузки.',
+      en: 'A CRM for a dev team: a two-week task timeline and kanban, people, contacts and workload analytics.',
+    },
+    points: {
+      ru: [
+        'Продукт целиком: сервер, вход и роли, API и деплой.',
+        'Дизайн-система «Студия»: живой фон, стеклянное превью задач, палитры тем и выбор шрифта.',
+        'Таймлайн на две недели и канбан: массовый выбор задач и перенос по статусам.',
+        'Описание и заметки в Markdown с предпросмотром (таблицы, цитаты), вставка фото и файлов из буфера обмена.',
+        'Нагрузка по сотрудникам, контакты и аналитика. На скриншотах — демо-данные.',
+      ],
+      en: [
+        'The whole product: the server, sign-in and roles, the API and deployment.',
+        'The “Studio” design system: a live background, glassy task preview, theme palettes and a font picker.',
+        'A two-week timeline and kanban: bulk task selection and moving across statuses.',
+        'Markdown descriptions and notes with preview (tables, quotes), pasting photos and files from the clipboard.',
+        'Per-person workload, contacts and analytics. Screenshots show demo data.',
+      ],
+    },
+    stack: ['JavaScript', 'HTML', 'CSS', 'Node.js'],
     links: [],
   },
 
